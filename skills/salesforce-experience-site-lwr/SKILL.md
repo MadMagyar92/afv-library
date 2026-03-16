@@ -1,5 +1,5 @@
 ---
-name: salesforce-experience-site
+name: salesforce-experience-site-lwr
 description: Use this skill when users need to create, modify, or manage Salesforce Experience Cloud sites (LWR sites). Trigger when users mention Experience sites, LWR sites, DigitalExperience, Experience Cloud, community sites, portals, creating pages, adding routes, views, theme layouts, branding sets, or any DigitalExperience bundle work. Also use when users mention specific content types like sfdc_cms__route, sfdc_cms__view, sfdc_cms__themeLayout, or when troubleshooting site deployment. Always use this skill for any Experience Cloud or LWR site work.
 ---
 
