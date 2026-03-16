@@ -1,7 +1,7 @@
 # Configure Metadata: DigitalExperienceConfig
 
 ## Purpose
-This configuration file creates a **net-new, default** DigitalExperienceConfig metadata record for a Digital Experience Site. It is not intended to edit or modify an existing DigitalExperienceConfig record. Use this template only when provisioning a brand-new site.
+This configuration file creates a **net-new, default** DigitalExperienceConfig metadata record for a Digital Experience React Site. It is not intended to edit or modify an existing DigitalExperienceConfig record. Use this template only when provisioning a brand-new React site.
 
 ## File Location
 ```

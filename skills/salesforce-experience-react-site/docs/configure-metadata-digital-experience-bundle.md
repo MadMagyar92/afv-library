@@ -1,7 +1,7 @@
 # Configure Metadata: DigitalExperienceBundle
 
 ## Purpose
-This configuration file creates a **net-new, default** DigitalExperienceBundle metadata record for a Digital Experience Site. It is not intended to edit or modify an existing DigitalExperienceBundle record. Use this template only when provisioning a brand-new site.
+This configuration file creates a **net-new, default** DigitalExperienceBundle metadata record for a Digital Experience React Site. It is not intended to edit or modify an existing DigitalExperienceBundle record. Use this template only when provisioning a brand-new React site.
 
 ## File Location
 ```
