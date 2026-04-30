@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+  <sharingGuestRules>
+    <fullName>Share${Object}WithSiteGuest</fullName>
+    <accessLevel>Read</accessLevel>
+    <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    <label>Share ${Object} With Site Guest</label>
+    <sharedTo>
+      <!-- CommunityNickname of the site guest user — NOT the URL path prefix -->
+      <guestUser>${GuestName}</guestUser>
+    </sharedTo>
+    <criteriaItems>
+      <!-- TODO: replace with the field filter that scopes which records are exposed -->
+      <field>Name</field>
+      <operation>notEqual</operation>
+      <value>null</value>
+    </criteriaItems>
+  </sharingGuestRules>
+</SharingRules>

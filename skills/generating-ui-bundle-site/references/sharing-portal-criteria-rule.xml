@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+  <sharingCriteriaRules>
+    <fullName>Share${Object}WithPortalUser</fullName>
+    <accessLevel>Read</accessLevel>
+    <label>Share ${Object} With Portal User</label>
+    <sharedTo>
+      <allCustomerPortalUsers></allCustomerPortalUsers>
+    </sharedTo>
+    <criteriaItems>
+      <!-- TODO: replace with the field filter that scopes which records are shared -->
+      <field>Name</field>
+      <operation>notEqual</operation>
+      <value>null</value>
+    </criteriaItems>
+    <!-- Required for criteria rules. Set to true only if records owned by all users should be included. -->
+    <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+  </sharingCriteriaRules>
+</SharingRules>

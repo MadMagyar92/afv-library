@@ -67,6 +67,17 @@ For URL updates, see [update-site-urls.md](docs/update-site-urls.md).
 ### Step 4: Do Not Modify Non-Templated Properties
 Do not modify any default property values for `Network`, `CustomSite`, `DigitalExperience`, `DigitalExperienceConfig`, or `DigitalExperienceBundle` metadata that are not expressed as variables wrapped in `{braces}`.
 
+### Step 5: Configure Sharing Rules for Site Users
+
+After the site infrastructure is in place, configure Sharing Rules so records are accessible to site users. The rule type depends on the user type:
+
+| User Type | Rule Element | Reference Doc |
+|-----------|-------------|---------------|
+| Unauthenticated visitors (guest) | `sharingGuestRules` | [configure-guest-sharing-rules.md](docs/configure-guest-sharing-rules.md) |
+| Authenticated portal / community users | `sharingCriteriaRules` or `sharingOwnerRules` | [configure-portal-sharing-rules.md](docs/configure-portal-sharing-rules.md) |
+
+Read the relevant doc in full — it contains the complete workflow, scaffold script usage, critical requirements, and deploy commands.
+
 ## Verification Checklist
 Before deploying, confirm:
 
@@ -74,6 +85,7 @@ Before deploying, confirm:
 - [ ] All metadata directories and files exist per the project structure
 - [ ] All metadata fields match the Step 3 templates with `{braces}` substituted only; no other default property values were added or changed
 - [ ] `appSpace` in `content.json` matches an existing `UIBundle` metadata record
+- [ ] Sharing Rules configured for all required user types (Step 5)
 - [ ] Deployment validates successfully:
 ```bash
 sf project deploy validate --metadata Network CustomSite DigitalExperienceConfig DigitalExperienceBundle DigitalExperience --target-org ${usernameOrAlias}

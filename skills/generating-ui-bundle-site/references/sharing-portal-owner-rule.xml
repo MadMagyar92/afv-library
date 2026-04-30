@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+  <sharingOwnerRules>
+    <fullName>Share${Object}WithOtherPortalUser</fullName>
+    <accessLevel>Read</accessLevel>
+    <label>Share ${Object} With Other Portal User</label>
+    <sharedTo>
+      <allCustomerPortalUsers></allCustomerPortalUsers>
+    </sharedTo>
+    <sharedFrom>
+      <!-- TODO: replace with the source of record ownership if not allCustomerPortalUsers -->
+      <allCustomerPortalUsers></allCustomerPortalUsers>
+    </sharedFrom>
+  </sharingOwnerRules>
+</SharingRules>
